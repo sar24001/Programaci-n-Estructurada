@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("contador")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+ef1aae89aa03eb2e2820be6b0e2a8060e42e4faf")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+eac6e368a5c1c417f0a6f748b71c58332d1c5c65")]
 [assembly: System.Reflection.AssemblyProductAttribute("contador")]
 [assembly: System.Reflection.AssemblyTitleAttribute("contador")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
