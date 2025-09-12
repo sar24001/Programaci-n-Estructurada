@@ -1,5 +1,4 @@
-﻿using System;
-
+using System;
 class Program
 {
     static void Main()
@@ -9,16 +8,12 @@ class Program
         {
             // Solicitar y leer la cantidad de productos
             Console.Write("Cantidad: ");
-            string inputCantidad = Console.ReadLine();
-            // Convertir la entrada a entero
-            int cantidad = int.Parse(inputCantidad);
+            int cantidad = Convert.ToInt32(Console.ReadLine());
 
             //Solicitar y leer el precio unitario del producto
             Console.Write("Precio unitario: ");
-            string inputPrecio = Console.ReadLine();
-            // Convertir la entrada a decimal
-            decimal precioUnitario = decimal.Parse(inputPrecio);
-            
+            decimal precioUnitario = Convert.ToDecimal(Console.ReadLine());
+
             // Calcular subtotal multiplicando cantidad por precio unitario, luego el IVA (15%) y total
             decimal subtotal = cantidad * precioUnitario;
             decimal iva = 0.15m * subtotal;
