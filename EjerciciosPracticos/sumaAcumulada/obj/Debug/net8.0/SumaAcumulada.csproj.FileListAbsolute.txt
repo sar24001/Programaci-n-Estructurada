@@ -1,0 +1,5 @@
+C:\Users\USER\Desktop\Programaci-n-Estructurada\EjerciciosPracticos\SumaAcumulada\obj\Debug\net8.0\SumaAcumulada.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\USER\Desktop\Programaci-n-Estructurada\EjerciciosPracticos\SumaAcumulada\obj\Debug\net8.0\SumaAcumulada.AssemblyInfoInputs.cache
+C:\Users\USER\Desktop\Programaci-n-Estructurada\EjerciciosPracticos\SumaAcumulada\obj\Debug\net8.0\SumaAcumulada.AssemblyInfo.cs
+C:\Users\USER\Desktop\Programaci-n-Estructurada\EjerciciosPracticos\SumaAcumulada\obj\Debug\net8.0\SumaAcumulada.csproj.CoreCompileInputs.cache
+C:\Users\USER\Desktop\Programaci-n-Estructurada\EjerciciosPracticos\SumaAcumulada\obj\Debug\net8.0\SumaAcumulada.sourcelink.json
