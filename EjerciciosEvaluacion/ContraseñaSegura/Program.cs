@@ -59,24 +59,27 @@ class ValidadorContraseña
         return false;
     }
 
-    // Menú de prueba
     static void Main(string[] args)
     {
-        Console.Write("Ingresa una contraseña para validar: ");
-        string contraseña = Console.ReadLine();
+        string contraseña;
 
-        if (EsContraseñaValida(contraseña))
+        do
         {
-            Console.WriteLine("Contraseña válida.");
-        }
-        else
-        {
-            Console.WriteLine("Contraseña inválida. Debe cumplir todos los requisitos:");
-            Console.WriteLine("• Mínimo 8 caracteres");
-            Console.WriteLine("• Al menos una mayúscula");
-            Console.WriteLine("• Al menos una minúscula");
-            Console.WriteLine("• Al menos un número");
-            Console.WriteLine("• Al menos un carácter especial (!@#$%^&*)");
-        }
+            Console.Write("Ingresa una contraseña segura: ");
+            contraseña = Console.ReadLine();
+
+            if (!EsContraseñaValida(contraseña))
+            {
+                Console.WriteLine("\nContraseña inválida. Debe cumplir todos los requisitos:");
+                Console.WriteLine("• Mínimo 8 caracteres");
+                Console.WriteLine("• Al menos una mayúscula");
+                Console.WriteLine("• Al menos una minúscula");
+                Console.WriteLine("• Al menos un número");
+                Console.WriteLine("• Al menos un carácter especial (!@#$%^&*)\n");
+            }
+
+        } while (!EsContraseñaValida(contraseña));
+
+        Console.WriteLine("Contraseña válida. ¡Bien hecho!");
     }
 }
