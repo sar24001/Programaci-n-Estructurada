@@ -2,7 +2,7 @@
 
 class ConversorTemperatura
 {
-    static string escalaConversion = "CelsiusAFahrenheit"; 
+    static string escalaConversion = "FahrenheitACelsius"; // Cambiar a "CelsiusAFahrenheit" para otra conversión
 
     static double ConvertirTemperatura(double valor)
     {
