@@ -1,0 +1,15 @@
+C:\Users\USER\Desktop\Programaci-n-Estructurada\EjerciciosPracticos\contadorFuncion\bin\Debug\net8.0\contadorFuncion.exe
+C:\Users\USER\Desktop\Programaci-n-Estructurada\EjerciciosPracticos\contadorFuncion\bin\Debug\net8.0\contadorFuncion.deps.json
+C:\Users\USER\Desktop\Programaci-n-Estructurada\EjerciciosPracticos\contadorFuncion\bin\Debug\net8.0\contadorFuncion.runtimeconfig.json
+C:\Users\USER\Desktop\Programaci-n-Estructurada\EjerciciosPracticos\contadorFuncion\bin\Debug\net8.0\contadorFuncion.dll
+C:\Users\USER\Desktop\Programaci-n-Estructurada\EjerciciosPracticos\contadorFuncion\bin\Debug\net8.0\contadorFuncion.pdb
+C:\Users\USER\Desktop\Programaci-n-Estructurada\EjerciciosPracticos\contadorFuncion\obj\Debug\net8.0\contadorFuncion.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\USER\Desktop\Programaci-n-Estructurada\EjerciciosPracticos\contadorFuncion\obj\Debug\net8.0\contadorFuncion.AssemblyInfoInputs.cache
+C:\Users\USER\Desktop\Programaci-n-Estructurada\EjerciciosPracticos\contadorFuncion\obj\Debug\net8.0\contadorFuncion.AssemblyInfo.cs
+C:\Users\USER\Desktop\Programaci-n-Estructurada\EjerciciosPracticos\contadorFuncion\obj\Debug\net8.0\contadorFuncion.csproj.CoreCompileInputs.cache
+C:\Users\USER\Desktop\Programaci-n-Estructurada\EjerciciosPracticos\contadorFuncion\obj\Debug\net8.0\contadorFuncion.sourcelink.json
+C:\Users\USER\Desktop\Programaci-n-Estructurada\EjerciciosPracticos\contadorFuncion\obj\Debug\net8.0\contadorFuncion.dll
+C:\Users\USER\Desktop\Programaci-n-Estructurada\EjerciciosPracticos\contadorFuncion\obj\Debug\net8.0\refint\contadorFuncion.dll
+C:\Users\USER\Desktop\Programaci-n-Estructurada\EjerciciosPracticos\contadorFuncion\obj\Debug\net8.0\contadorFuncion.pdb
+C:\Users\USER\Desktop\Programaci-n-Estructurada\EjerciciosPracticos\contadorFuncion\obj\Debug\net8.0\contadorFuncion.genruntimeconfig.cache
+C:\Users\USER\Desktop\Programaci-n-Estructurada\EjerciciosPracticos\contadorFuncion\obj\Debug\net8.0\ref\contadorFuncion.dll
