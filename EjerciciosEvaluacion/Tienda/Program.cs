@@ -1,73 +1,103 @@
 ﻿using System;
-using System.Collections.Generic;
 
-class RegistroUsuarios
+class TiendaEnLinea
 {
-    // Lista global que almacena los nombres de usuarios registrados
-    static List<string> usuariosRegistrados = new List<string>();
+    // Variable global que almacena el total del carrito
+    static double carritoTotal = 0;
 
-    // Método para registrar un nuevo usuario
-    static void RegistrarUsuario()
+    // Método para agregar un producto
+    static void AgregarProducto()
     {
-        Console.Write("Ingresa el nombre de usuario a registrar: ");
-        string nuevoUsuario = Console.ReadLine();
+        Console.Write("Ingresa el precio del producto a agregar: ");
+        string entrada = Console.ReadLine();
 
-        if (string.IsNullOrWhiteSpace(nuevoUsuario))
+        if (double.TryParse(entrada, out double precio) && precio > 0)
         {
-            Console.WriteLine("El nombre no puede estar vacío.");
-            return;
-        }
-
-        if (usuariosRegistrados.Contains(nuevoUsuario))
-        {
-            Console.WriteLine("El usuario ya está registrado.");
+            carritoTotal += precio;
+            Console.WriteLine($"Producto agregado. Total actual: {carritoTotal:F2}");
         }
         else
         {
-            usuariosRegistrados.Add(nuevoUsuario);
-            Console.WriteLine($"Usuario '{nuevoUsuario}' registrado correctamente.");
+            Console.WriteLine("Precio inválido. Ingresa un número positivo.");
         }
     }
 
-    // Método para validar si un usuario ya existe
-    static void ValidarUsuario()
+    // Método para eliminar un producto
+    static void EliminarProducto()
     {
-        Console.Write("Ingresa el nombre de usuario a validar: ");
-        string usuario = Console.ReadLine();
+        Console.Write("Ingresa el precio del producto a eliminar: ");
+        string entrada = Console.ReadLine();
 
-        if (usuariosRegistrados.Contains(usuario))
+        if (double.TryParse(entrada, out double precio) && precio > 0)
         {
-            Console.WriteLine($"El usuario '{usuario}' está registrado.");
-        }
-        else
-        {
-            Console.WriteLine($"El usuario '{usuario}' no existe en el sistema.");
-        }
-    }
-
-    // Método para mostrar todos los usuarios registrados
-    static void MostrarUsuarios()
-    {
-        Console.WriteLine("Lista de usuarios registrados:");
-
-        if (usuariosRegistrados.Count == 0)
-        {
-            Console.WriteLine("No hay usuarios registrados.");
-        }
-        else
-        {
-            foreach (string usuario in usuariosRegistrados)
+            if (precio <= carritoTotal)
             {
-                Console.WriteLine($"• {usuario}");
+                carritoTotal -= precio;
+                Console.WriteLine($"Producto eliminado. Total actual: {carritoTotal:F2}");
+            }
+            else
+            {
+                Console.WriteLine("El precio excede el total del carrito.");
             }
         }
+        else
+        {
+            Console.WriteLine("Precio inválido. Ingresa un número positivo.");
+        }
+    }
+
+    // Método para consultar el total actual
+    static void ConsultarTotal()
+    {
+        Console.WriteLine($"Total actual de la compra: {carritoTotal:F2}");
+    }
+
+    // Menú principal
+    static void MostrarMenu()
+    {
+        int opcion;
+        do
+        {
+            Console.WriteLine("\nMENÚ DE TIENDA EN LÍNEA");
+            Console.WriteLine("1. Agregar producto");
+            Console.WriteLine("2. Eliminar producto");
+            Console.WriteLine("3. Consultar total");
+            Console.WriteLine("4. Salir");
+            Console.Write("Selecciona una opción (1-4): ");
+
+            string entrada = Console.ReadLine();
+
+            if (int.TryParse(entrada, out opcion))
+            {
+                switch (opcion)
+                {
+                    case 1:
+                        AgregarProducto();
+                        break;
+                    case 2:
+                        EliminarProducto();
+                        break;
+                    case 3:
+                        ConsultarTotal();
+                        break;
+                    case 4:
+                        Console.WriteLine("Gracias por usar la tienda. ¡Hasta pronto!");
+                        break;
+                    default:
+                        Console.WriteLine("Opción inválida. Intenta nuevamente.");
+                        break;
+                }
+            }
+            else
+            {
+                Console.WriteLine("Entrada inválida. Ingresa un número del 1 al 4.");
+            }
+
+        } while (opcion != 4);
     }
 
     static void Main(string[] args)
     {
-        // Simulación de acciones
-        RegistrarUsuario();
-        ValidarUsuario();
-        MostrarUsuarios();
+        MostrarMenu(); // Inicia el menú interactivo
     }
 }
