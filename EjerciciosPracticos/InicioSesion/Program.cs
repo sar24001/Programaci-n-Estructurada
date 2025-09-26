@@ -6,7 +6,7 @@ class ControlSesion
     static bool sesionIniciada = false;
 
     // Contraseña predefinida 
-    static string contraseñaCorrecta = "educacion2025";
+    static string contraseñaCorrecta = "saralinas2025";
 
     // Funcion que simula el inicio de sesión
     static void IniciarSesion()
@@ -29,5 +29,6 @@ class ControlSesion
 
     static void Main(string[] args)
     {
-        IniciarSesion(); 
+        IniciarSesion();
+    }
 }
